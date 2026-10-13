@@ -31,6 +31,15 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
+vite.config.ts.timestamp-*
+.vite/
+
+# Astro generated types
+.astro/
+
+# Turbo Repo
+.turbo
+
 # node-waf configuration
 .lock-wscript
 
@@ -139,11 +148,3 @@ dist
 
 # Vite files
 vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-.vite/
-
-# Astro generated types
-.astro/
-
-# Turbo Repo
-.turbo

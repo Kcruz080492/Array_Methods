@@ -1,0 +1,55 @@
+1. Descargar y abrir el proyecto
+Ejecuta los comandos uno por uno:
+git clone https://github.com/Kcruz080492/Array_Methods.git
+cd Array_Methods
+code .
+
+2. Preparar el .gitignore
+Antes de instalar las dependencias, revisa si el proyecto ya contiene un archivo llamado .gitignore. Si existe, conserva su contenido y verifica que incluya estas líneas; si no existe, créalo en la carpeta principal:
+# Dependencias instaladas
+node_modules/
+
+# Archivos generados al compilar
+dist/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Registros de errores
+*.log
+
+Guarda el archivo. Sí deben subirse los archivos .ts, package.json, package-lock.json, tsconfig.json y el propio .gitignore.
+Luego instala las dependencias:
+npm install
+
+3. Crear tu propio repositorio en GitHub
+En tu cuenta de GitHub, crea un repositorio llamado, por ejemplo, practica-metodos-arreglos.
+Créalo vacío: no agregues README, .gitignore ni licencia desde GitHub, porque partirás del proyecto descargado.
+Copia su dirección HTTPS.
+4. Conectar el proyecto a tu repositorio
+El proyecto descargado todavía apunta al repositorio de la docente. Cambia esa dirección por la de tu repositorio:
+git remote set-url origin https://github.com/TU_USUARIO/practica-metodos-arreglos.git
+
+Sustituye TU_USUARIO y el nombre del repositorio por los tuyos. Comprueba la conexión:
+git remote -v
+
+Las dos líneas deben mostrar tu repositorio.
+5. Resolver y subir la práctica
+Completa los bloques TODO, guarda los archivos y ejecuta:
+git add .
+git status
+
+Comprueba que no aparezcan archivos de node_modules ni de dist entre los cambios preparados. Después ejecuta:
+git commit -m "Resuelve práctica de métodos de arreglos"
+git push -u origin main
+
+Si GitHub solicita iniciar sesión, utiliza tu cuenta.
+6. Subir cambios posteriores
+Cada vez que avances y quieras guardar una nueva versión en GitHub:
+git add .
+git commit -m "Completa cálculos y actualización del inventario"
+git push
+
+Cambia el mensaje del commit para describir lo que hiciste. Finalmente, entrega en Canvas el enlace a tu repositorio.

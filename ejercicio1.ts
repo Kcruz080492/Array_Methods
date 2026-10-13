@@ -1,7 +1,7 @@
 // =============================================================
 // 1. DEFINIR LAS ESTRUCTURAS DE DATOS
 // =============================================================
-// TODO: Declara la interfaz Producto con los campos obligatorios:
+// Declara la interfaz Producto con los campos obligatorios:
 // id: número; nombre: cadena; precio: número; stock: número.
 // categoria: solo puede ser "tecnología", "hogar" o "alimentos".
 // Recuerda: una interfaz describe los datos; no crea un producto.
@@ -10,7 +10,7 @@
 //   Completa aquí los campos y sus tipos.
 // }
 
-// TODO: Declara ItemCarrito con productoId y cantidad, ambos numéricos.
+//  Declara ItemCarrito con productoId y cantidad, ambos numéricos.
 
 // interface ItemCarrito {
 //   Completa aquí los campos y sus tipos.
@@ -20,7 +20,7 @@
 // =============================================================
 // 2. CREAR EL CATÁLOGO INICIAL
 // =============================================================
-// TODO: Declara catalogo como un arreglo Producto[] con estos datos:
+//  Declara catalogo como un arreglo Producto[] con estos datos:
 //
 // id  | nombre            | precio | stock | categoria
 // 101 | Laptop            | 800    | 5     | tecnología
@@ -38,17 +38,18 @@
 // =============================================================
 // 3. AGREGAR UN PRODUCTO — push()
 // =============================================================
-// TODO: Agrega al final del catálogo el siguiente producto mediante push:
+// Agrega al final del catálogo el siguiente producto mediante push:
 // id: 105; nombre: "Café en grano"; precio: 15; stock: 20;
 // categoria: "alimentos".
 // Muestra el catálogo y comprueba que ahora contiene cinco productos.
-// Pregunta: ¿qué devuelve push: el producto o la nueva cantidad?
+// Pregunta: ¿qué devuelve push: el producto o la nueva cantidad? 
+// devuel ve la nueva cantidad de elementos en el arreglo, no el producto agregado.
 
 
 // =============================================================
 // 4. OBTENER LOS PRODUCTOS DISPONIBLES — filter()
 // =============================================================
-// TODO: Crea disponibles usando filter sobre catalogo.
+//  Crea disponibles usando filter sobre catalogo.
 // Incluye únicamente productos cuyo stock sea mayor que cero.
 // Muestra el resultado y comprueba que la Cafetera queda excluida.
 // El catálogo original debe conservar los cinco productos.
@@ -59,7 +60,7 @@
 // =============================================================
 // 5. BUSCAR UN PRODUCTO — find()
 // =============================================================
-// TODO: Implementa buscarPorId con los siguientes requisitos:
+// Implementa buscarPorId con los siguientes requisitos:
 // - Recibe id de tipo number y lista de tipo Producto[].
 // - Utiliza find para buscar un producto con ese identificador.
 // - Devuelve Producto | undefined, porque puede no existir.
@@ -76,7 +77,7 @@
 // =============================================================
 // 6. CREAR EL CARRITO DE COMPRAS
 // =============================================================
-// TODO: Declara carritoCliente como ItemCarrito[] con estas compras:
+//  Declara carritoCliente como ItemCarrito[] con estas compras:
 // - Producto 101: una unidad.
 // - Producto 102: dos unidades.
 // El carrito almacena identificadores y cantidades, no productos completos.
@@ -89,7 +90,7 @@
 // =============================================================
 // 7. GENERAR EL DETALLE DEL PEDIDO — map()
 // =============================================================
-// TODO: Crea detalleCompra transformando carritoCliente mediante map.
+//  Crea detalleCompra transformando carritoCliente mediante map.
 // Para cada artículo:
 // - Busca su producto utilizando buscarPorId.
 // - Comprueba que exista antes de consultar su nombre o su precio.
@@ -106,7 +107,7 @@
 // =============================================================
 // 8. CALCULAR EL TOTAL — reduce()
 // =============================================================
-// TODO: Calcula totalPagar usando reduce sobre detalleCompra.
+//  Calcula totalPagar usando reduce sobre detalleCompra.
 // Acumula los subtotales y utiliza cero como valor inicial.
 // El total debe ser un número, no una cadena de texto.
 
@@ -116,7 +117,7 @@
 // =============================================================
 // 9. ACTUALIZAR EL INVENTARIO — forEach()
 // =============================================================
-// TODO: Recorre carritoCliente con forEach.
+// Recorre carritoCliente con forEach.
 // Busca cada producto y, si existe, descuenta la cantidad comprada del stock.
 // Actualiza los productos que pertenecen al catálogo original.
 // Realiza este paso una sola vez, después de generar el pedido válido.
@@ -126,7 +127,7 @@
 // =============================================================
 // 10. MOSTRAR Y COMPROBAR LOS RESULTADOS
 // =============================================================
-// TODO: Muestra en consola:
+// Muestra en consola:
 // - El detalle de la compra: descripción, cantidad y subtotal.
 // - El total a pagar en dólares.
 // - El nombre y las existencias actualizadas de todos los productos.
